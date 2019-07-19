@@ -1,0 +1,1036 @@
+Message-ID: <86584700.32511.1563553444018.JavaMail.proddts@lonrs13993>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_32510_1021461565.1563553444018"
+
+------=_Part_32510_1021461565.1563553444018
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>JIRA Functional Testing for V8.x(WIP)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>JIRA Functional Testing for V8.x(WIP)</h1>
+    <div class=3D"Section1">
+        <p><strong>About :&nbsp;</strong>This page contain the end to end f=
+unctional testing results oj JIRA application.</p>
+<p><strong>Note:</strong> <span style=3D"color: rgb(255,0,0);">Please verif=
+y all application linking with other applications</span></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 52.0px;">
+<col style=3D"width: 450.0px;">
+<col style=3D"width: 294.0px;">
+<col style=3D"width: 29.0px;">
+<col style=3D"width: 517.0px;">
+</colgroup>
+<thead>
+<tr>
+<th class=3D"confluenceTh">Test Step</th>
+<th class=3D"confluenceTh">Test Data</th>
+<th class=3D"confluenceTh">Expected Result</th>
+<th colspan=3D"1" class=3D"confluenceTh">Status</th>
+<th class=3D"confluenceTh">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd"><p>Login to JIRA as an admin credentials and ver=
+ify below system info:<br>=E2=80=A2Database type<br>=E2=80=A2Database JNDI =
+address<br>=E2=80=A2Database URL<br>=E2=80=A2Database version<br>=E2=80=A2D=
+atabase driver</p></td>
+<td class=3D"confluenceTd"><p>All info should be belong to Oracle 12c</p></=
+td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">2</td>
+<td class=3D"confluenceTd"><p>Login to JIRA as (listed below) with LAN cred=
+entials and verify restrict issues and</p><p>issue actions to certain users=
+ and user groups<br>1.USER<br>2.ADMINISTRATOR<br>3.ANONYMOUS<br>4.SCRUM MAS=
+TER<br>5.DEVELOPER<br>6.Crowd-synchronisation (Manual)</p></td>
+<td class=3D"confluenceTd"><p>All tabs should be working fine</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">3</td>
+<td class=3D"confluenceTd"><p>Check the below steps:<br>=E2=80=A2Check all =
+details for logged in user<br>=E2=80=A2Check user creation and deletion<br>=
+=E2=80=A2All plugins are available for use without any issues<br>=E2=80=A2C=
+heck the link between JIRA and other applications</p></td>
+<td class=3D"confluenceTd"><p>=E2=80=A2User is able to see all details as u=
+ser have in Jira 7.12.1 with Oracle 12c<br>=E2=80=A2Admin is able to create=
+ and delete user successfully<br>=E2=80=A2Admin is able to verify all user =
+installed plugins</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">4</td>
+<td class=3D"confluenceTd"><p>Check the Application Links Between JIRA And =
+other applications</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><p>Previously it was working fine, currently it =
+linked with NFT confluence only as of no other NFT servers available,so pas=
+sing this test</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">5</td>
+<td class=3D"confluenceTd"><p>Sprint Test: Check the below steps:<br>=E2=80=
+=A2Issues (Check Random Issues) and its attributes - Status, Assignee etc<b=
+r>=E2=80=A2Reports<br>=E2=80=A2Saved filters<br>=E2=80=A2Links between the =
+stories<br>=E2=80=A2Backlog</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">6</td>
+<td class=3D"confluenceTd"><p>Add a field to a project<br>=E2=80=A2add a ne=
+w filed, edit and delete<br>=E2=80=A2add a field that already exists</p></t=
+d>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">7</td>
+<td class=3D"confluenceTd"><p>Attaching a File<br>=E2=80=A2Attaching a file=
+ to an Issue&nbsp;<br>=E2=80=A2Attach a image to an issue<br>=E2=80=A2Verif=
+y if JIRA display attached image as screenshot or thumbnails.</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">8</td>
+<td class=3D"confluenceTd"><p>Remove an Attachment<br>=E2=80=A2Delete the a=
+ttachment that you added in above step<br>=E2=80=A2Delete all attachments f=
+rom an Issue.</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">9</td>
+<td class=3D"confluenceTd"><p>Verify while downloading all the files attach=
+ed to an issue as a single ZIP file, its working fine ?</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">10</td>
+<td class=3D"confluenceTd"><p>Attaching a Screenshot<br>=E2=80=A2Create a D=
+EMO issue<br>=E2=80=A2Capture a screenshot on Windows<br>=E2=80=A2Add the s=
+creenshot to above issue<br>=E2=80=A2Delete the same screen shot</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">11</td>
+<td class=3D"confluenceTd"><p>Create a Clone Issue</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">12</td>
+<td class=3D"confluenceTd"><p>Commenting on an Issue<br>=E2=80=A2Adding a c=
+omment<br>=E2=80=A2Editing a comment<br>=E2=80=A2Add a comment that is visi=
+ble to DTS Administrator<br>=E2=80=A2Deleting a comment</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">13</td>
+<td class=3D"confluenceTd"><p>Creating a Sub-Task<br>=E2=80=A2create a sub-=
+task<br>=E2=80=A2assign the sub-task to yourself<br>=E2=80=A2re-assign the =
+sub-task to someone else<br>=E2=80=A2search for sub-tasks<br>=E2=80=A2conve=
+rt a standard issue to sub-task<br>=E2=80=A2convert a sub-task to a standar=
+d issue</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">14</td>
+<td class=3D"confluenceTd"><p>Creating a link to another issue on the same =
+JIRA instance</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">15</td>
+<td class=3D"confluenceTd"><p>Move an issue from one project to another</p>=
+</td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">16</td>
+<td class=3D"confluenceTd"><p>Set security level on an issue that restricts=
+ the access to only DTS admins</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">17</td>
+<td class=3D"confluenceTd"><p>Verify Issue's change History, e.g.<br>=E2=80=
+=A2creator of the issue (this may be the same as the reporter, but can be d=
+istinct)<br>=E2=80=A2changes to an issue field<br>=E2=80=A2attachment of a =
+file<br>=E2=80=A2deletion of a comment<br>=E2=80=A2deletion of a worklog<br=
+>=E2=80=A2creation or deletion of an issue link</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">18</td>
+<td class=3D"confluenceTd"><p>Add yourself as watcher for an issue</p><p>Ad=
+d other member from DTS team as watcher for an issue</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">19</td>
+<td class=3D"confluenceTd"><p>Create sample project</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">20</td>
+<td class=3D"confluenceTd"><p>create issuetype, issue type schema,assign to=
+ sample project</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">21</td>
+<td class=3D"confluenceTd"><p>create and delete screen, screen scheman, iss=
+utype screen schema</p><p>Add different customfields to screen, edit screen=
+ and view screen</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">22</td>
+<td class=3D"confluenceTd"><p>create Workflow, Workflow schema and assign t=
+o sample issutype,sample project</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">23</td>
+<td class=3D"confluenceTd"><p>Create sample customfield ,field configaratio=
+n schemas</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">24</td>
+<td class=3D"confluenceTd"><p>Add new Resolution,edit and delete</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">25</td>
+<td class=3D"confluenceTd"><p>Search an issue for last one year or any spec=
+ific dates</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">26</td>
+<td class=3D"confluenceTd"><p>=E2=80=A2Displaying Search Results as a Chart=
+<br>=E2=80=A2Displaying Search Results in XML<br>=E2=80=A2Exporting Search =
+Results to Microsoft Excel<br>=E2=80=A2Exporting Search Results to Microsof=
+t Word<br>=E2=80=A2Receiving Search Results as an RSS Feed<br>=E2=80=A2Rece=
+iving Search Results via Email<br>=E2=80=A2Sharing a Search Result</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><p>SMTP disabled in NFT</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">27</td>
+<td class=3D"confluenceTd"><p>=E2=80=A2Create new filters<br>=E2=80=A2edit =
+and delete filters<br>=E2=80=A2search for filters</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">28</td>
+<td class=3D"confluenceTd"><p>For a sample project, generate and display a =
+report that depicts 'Created vs Resolved issues'</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">29</td>
+<td class=3D"confluenceTd"><p>For a sample project, generate and display a =
+report that depicts resolution Time Report</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">30</td>
+<td class=3D"confluenceTd"><p>For a sample project, generate and display a =
+report that depicts PIE Chart report</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">31</td>
+<td class=3D"confluenceTd"><p>For a sample project, generate and display a =
+report that depicts PIE Chart report</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">32</td>
+<td class=3D"confluenceTd"><p>For a sample project, generate and display a =
+report that depicts Recently created issues report</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">33</td>
+<td class=3D"confluenceTd"><p>For a sample project, generate and display a =
+report that depicts Time since Issues report.</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">34</td>
+<td class=3D"confluenceTd"><p>Manage your dashboard<br>=E2=80=A2Create a ne=
+w dashboard page.<br>=E2=80=A2Add a dashboard page as a favorite.<br>=E2=80=
+=A2Share a dashboard page that you have created, with other users.<br>=E2=
+=80=A2Search for dashboard pages that has been created by you or shared wit=
+h you by other users.<br>=E2=80=A2Configure an existing dashboard or edit a=
+n existing dashboard's details of a dashboard that you have created.<br>=E2=
+=80=A2Copy a dashboard page that has been created by you or shared with you=
+ by other users.<br>=E2=80=A2Delete a dashboard page that you have created.=
+</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">35</td>
+<td class=3D"confluenceTd"><p>Add the 'Assigned to Me ' gadget to your Dash=
+board</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">36</td>
+<td class=3D"confluenceTd"><p>Add the Average Age gadget to your Dashboard<=
+/p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">37</td>
+<td class=3D"confluenceTd"><p>Add the Created vs Resolved Gadget to your Da=
+shboard</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">38</td>
+<td class=3D"confluenceTd"><p>Add the Issue statistics gadget to your dashb=
+oard to your dashboard</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">39</td>
+<td class=3D"confluenceTd"><p>Add the recently created chart gadget to your=
+ dashboard</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">40</td>
+<td class=3D"confluenceTd"><p>Add the Watched Issues Gadget to your dashboa=
+rd</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">41</td>
+<td class=3D"confluenceTd"><p>Add the Heat Map Gadget to your dashboard</p>=
+</td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">42</td>
+<td class=3D"confluenceTd"><p>Update your timezone according to your locati=
+on</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">43</td>
+<td class=3D"confluenceTd"><p>Projects no longer used can now be archived</=
+p></td>
+<td class=3D"confluenceTd"><p>Archiving of projects should work fine</p></t=
+d>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">44</td>
+<td class=3D"confluenceTd"><p>Self-Service project administration by projec=
+t admins</p><p>=E2=80=A2Project admins can create, update, delete transitio=
+ns</p></td>
+<td class=3D"confluenceTd"><p>This functionality should be disabled</p></td=
+>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><p>Disabling this feature as of now.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">45</td>
+<td class=3D"confluenceTd"><p>Issues and Last update fields on projects pag=
+e</p></td>
+<td class=3D"confluenceTd"><p>These should be available</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">46</td>
+<td class=3D"confluenceTd"><p>Introduction of Kanban backlog</p></td>
+<td class=3D"confluenceTd"><p>Kanban Backlog should be visible</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">47</td>
+<td class=3D"confluenceTd"><p>Disabling empty JQL queries</p></td>
+<td class=3D"confluenceTd"><p>Empty JQL Queries should not work</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">48</td>
+<td class=3D"confluenceTd"><p>Split an issue into several ones, with a simp=
+le right-click on the issue and selecting Split issue</p></td>
+<td class=3D"confluenceTd"><p>Splitting issue should work</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">49</td>
+<td class=3D"confluenceTd"><p>Case-insensitive labels</p></td>
+<td class=3D"confluenceTd"><p>Labels should be case-insensitive now</p></td=
+>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">50</td>
+<td class=3D"confluenceTd"><p>Optimize a custom field using Custom fields o=
+ptimizer</p></td>
+<td class=3D"confluenceTd"><p>Custom field should be customized</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><p>Known bug in this versuion, but there is no i=
+mpact on JIRA Application.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">51</td>
+<td class=3D"confluenceTd"><p>Pagination in Custom fields page</p></td>
+<td class=3D"confluenceTd"><p>Pagination should be present</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">52</td>
+<td class=3D"confluenceTd"><p>Quick search in Custom fields page</p></td>
+<td class=3D"confluenceTd"><p>Quick search should be present</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">53</td>
+<td class=3D"confluenceTd"><p>Edit permissions of a filter</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">54</td>
+<td class=3D"confluenceTd"><p>Edit permissions of a dashboard</p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">55</td>
+<td class=3D"confluenceTd"><p>Check for information on Bitbucket requests a=
+vailable on the search under More -&gt; Development</p></td>
+<td class=3D"confluenceTd"><p>Search should provide Development parameters =
+related to Bitbucket</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><p>Jira is not linked with Bitbucket AS of now b=
+utbucket NFT not available.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">56</td>
+<td class=3D"confluenceTd"><p>When you completed a sprint with some unfinis=
+hed issues inside, you can also create a new sprint</p><p>(and move the iss=
+ues there) right from the dialog that displays after completing a sprint.</=
+p></td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">57</td>
+<td class=3D"confluenceTd"><p>Dropdowns show values without hinderance</p><=
+/td>
+<td class=3D"confluenceTd"><p>All functionalities should be working fine</p=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">58</td>
+<td class=3D"confluenceTd"><p>JJIRASERVER-67871</p><p>Error when pasting a =
+JQL filter in the URL with a particular ID</p></td>
+<td class=3D"confluenceTd"><p>There should be no error while pasting the UR=
+L</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">59</td>
+<td class=3D"confluenceTd"><p>JRASERVER-67891</p><p>NullPointer exception w=
+hen trying the View Issues links from the Project statistics page</p></td>
+<td class=3D"confluenceTd"><p>Issue navigator should appear</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">60</td>
+<td class=3D"confluenceTd"><p>Check for profile images on UI</p></td>
+<td class=3D"confluenceTd"><p>Images should render</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">61</td>
+<td class=3D"confluenceTd"><p>Check Adaptavist ScriptRunner for JIRA plug-i=
+ns version compatibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">62</td>
+<td class=3D"confluenceTd"><p>Check CCC Last Comment plug-ins version compa=
+tibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">63</td>
+<td class=3D"confluenceTd"><p>Check Component Versions plug-ins version com=
+patibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">64</td>
+<td class=3D"confluenceTd"><p>Check Configuration Manager for JIRA plug-ins=
+ version compatibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">65</td>
+<td class=3D"confluenceTd"><p>Check Confluence Issue Tab Plugin plug-ins ve=
+rsion compatibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">66</td>
+<td class=3D"confluenceTd"><p>Check JIRA Latest Activity Report version com=
+patibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">67</td>
+<td class=3D"confluenceTd"><p>Check JIRA Suite Utilities plug-in version co=
+mpatibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">68</td>
+<td class=3D"confluenceTd"><p>Check JIRA Timesheet Reports and Gadgets Plug=
+in version compatibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">69</td>
+<td class=3D"confluenceTd"><p>Check Portfolio for JIRA Plugin version compa=
+tibility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">70</td>
+<td class=3D"confluenceTd"><p>Check ZAPI Plugin version compatibility.</p><=
+/td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">71</td>
+<td class=3D"confluenceTd"><p>Check Zephyr for JIRA Plugin version compatib=
+ility.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">72</td>
+<td class=3D"confluenceTd"><p>Check Issue Printer Plugin version compatibil=
+ity.</p></td>
+<td class=3D"confluenceTd"><p>Version should be latest and compatible.</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">73</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Adaptavist Scr=
+iptRunner for JIRA</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">74</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in CCC Last Comme=
+nt</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">75</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Component Vers=
+ions</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">76</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Configuration =
+Manager for JIRA</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">77</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Confluence Iss=
+ue Tab Plugin</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">78</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in JIRA Latest Ac=
+tivity Report</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">79</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in JIRA Suite Uti=
+lities</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">80</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in JIRA Timesheet=
+ Reports and Gadgets Plugin</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">81</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Portfolio for =
+JIRA</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">82</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Zephyr for JIR=
+A</p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">83</td>
+<td class=3D"confluenceTd"><p>Check functionality of plug-in Issue Printer<=
+/p></td>
+<td class=3D"confluenceTd"><p>Plug-in should work fine.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">84</td>
+<td class=3D"confluenceTd"><p>Self-Service project administration by projec=
+t admins</p><p>=E2=80=A2Project admins edit screen by adding, removing and =
+rearranging existing system fields and custom fields</p></td>
+<td class=3D"confluenceTd"><p>This functionality should be disabled</p></td=
+>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">85</td>
+<td class=3D"confluenceTd"><p>Check whether banner update is working</p></t=
+d>
+<td class=3D"confluenceTd"><p>Banner should be updated properly.</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><p>Banner is updating properly but throws page n=
+ot found in Chrome browser. its working fine in IE browser.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_32510_1021461565.1563553444018--
