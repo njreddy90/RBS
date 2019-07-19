@@ -1,0 +1,1093 @@
+Message-ID: <195137052.1.1563554213606.JavaMail.uatapdts@lonrs12220.fm.rbsgrp.net>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_820582151.1563554213577"
+
+------=_Part_0_820582151.1563554213577
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Runbook - Jira upgrade from Jira 7.1.1 to v7.12.1</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Runbook - Jira upgrade from Jira 7.1.1 to v7.12.1</h1>
+    <div class=3D"Section1">
+        <p><strong>About</strong></p>
+<ul class=3D"alternate">
+<li>This page contains the steps to be performed on release day for up-grad=
+ation of Jira from v7.1.1 to v7.12.1 version.</li>
+</ul>
+<p><strong>Prerequisite :</strong></p>
+<ol>
+<li>Admin access to <a href=3D"https://jira-dts.fm.rbsgrp.net" class=3D"ext=
+ernal-link" rel=3D"nofollow">URL</a></li>
+<li>JIRA v7.12.1 binaries should be available on Artifactory -&nbsp;<a href=
+=3D"https://artifactory-1.dts.fm.rbsgrp.net/artifactory/list/puppet-install=
+er-packages-local/com/atlassian/atlassian-jira/7.12.1/atlassian-jira-softwa=
+re-7.12.1.zip" class=3D"external-link" rel=3D"nofollow">https://artifactory=
+-1.dts.fm.rbsgrp.net/artifactory/list/puppet-installer-packages-local/com/a=
+tlassian/atlassian-jira/7.12.1/atlassian-jira-software-7.12.1.zip</a></li>
+<li>Supported version add-ons should be uploaded to Artifactiory-&nbsp;<a h=
+ref=3D"https://artifactory-1.dts.fm.rbsgrp.net/artifactory/list/puppet-inst=
+aller-packages-local/com/atlassian/atlassian-jira/7.12.1/Plugins/" class=3D=
+"external-link" rel=3D"nofollow">https://artifactory-1.dts.fm.rbsgrp.net/ar=
+tifactory/list/puppet-installer-packages-local/com/atlassian/atlassian-jira=
+/7.12.1/Plugins/</a></li>
+<li>Database access</li>
+<li>Check Space on all&nbsp;JIRA nodes and shared home for backup<br><br></=
+li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Release Team Contact Details:&nbsp;</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<thead>
+<tr>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+Team
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+Contact Person
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+racf id
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+email id
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+direct contact number
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+escalation contact person
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+direct contact number
+</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Platform Eng</td>
+<td colspan=3D"1" class=3D"confluenceTd"><a class=3D"confluence-userlink us=
+er-mention" data-username=3D"kumaant" href=3D"/display/~kumaant" data-linke=
+d-resource-id=3D"210799720" data-linked-resource-version=3D"4" data-linked-=
+resource-type=3D"userinfo" data-base-url=3D"https://uatconfluence-dts.fm.rb=
+sgrp.net">Hemant Kumar</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">kumaant</td>
+<td colspan=3D"1" class=3D"confluenceTd"><a class=3D"external-link" href=3D=
+"mailto:Hemant.Kumar9@rbs.com" rel=3D"nofollow">Hemant.Kumar9@rbs.com</a></=
+td>
+<td colspan=3D"1" class=3D"confluenceTd">+91-9818679878</td>
+<td colspan=3D"1" class=3D"confluenceTd">Himanshu Goyal</td>
+<td colspan=3D"1" class=3D"confluenceTd">+91-9555239159</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Platform Eng</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><a class=3D"confluence-userlink us=
+er-mention current-user-mention" data-username=3D"chandj" href=3D"/display/=
+~chandj" data-linked-resource-id=3D"334997643" data-linked-resource-version=
+=3D"2" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://uatc=
+onfluence-dts.fm.rbsgrp.net">jaya chandra Reddy</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">chandj</td>
+<td colspan=3D"1" class=3D"confluenceTd"><a href=3D"mailto:jaya.chandraredd=
+ynellore@rbs.co.uk" class=3D"external-link" rel=3D"nofollow">jaya.chandrare=
+ddynellore@rbs.co.uk</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">+91-8008009400</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Himanshu Goyal</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>+91-9555239159</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Ops Team</td>
+<td colspan=3D"1" class=3D"confluenceTd">Manish Arya</td>
+<td colspan=3D"1" class=3D"confluenceTd">aryaxyr</td>
+<td colspan=3D"1" class=3D"confluenceTd"><a href=3D"mailto:Manish.Arya2@rbs=
+.com" class=3D"external-link" rel=3D"nofollow">Manish.Arya2@rbs.com</a></td=
+>
+<td colspan=3D"1" class=3D"confluenceTd">+91-9717348751</td>
+<td colspan=3D"1" class=3D"confluenceTd">Pankaj Bisht</td>
+<td colspan=3D"1" class=3D"confluenceTd">+91-9971089965</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br></strong></p>
+<p><strong>Timeline:&nbsp;</strong><strong>&nbsp; &nbsp;</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<thead>
+<tr>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+Steps
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+Description
+</div></th>
+<th class=3D"confluenceTh">
+<div class=3D"tablesorter-header-inner">
+Completion Date
+</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">1.</td>
+<td class=3D"confluenceTd">OAT SignOff</td>
+<td class=3D"confluenceTd"><time datetime=3D"2019-02-01" class=3D"date-past=
+">01 Feb 2019</time>&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2.</td>
+<td colspan=3D"1" class=3D"confluenceTd">UAT SignOff</td>
+<td colspan=3D"1" class=3D"confluenceTd"><time datetime=3D"2019-02-07" clas=
+s=3D"date-past">07 Feb 2019</time>&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">3.</td>
+<td colspan=3D"1" class=3D"confluenceTd">Production Release</td>
+<td colspan=3D"1" class=3D"confluenceTd"><time datetime=3D"2019-02-16" clas=
+s=3D"date-past">16 Feb 2019</time>&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">4.</td>
+<td colspan=3D"1" class=3D"confluenceTd">GoLive for end user</td>
+<td colspan=3D"1" class=3D"confluenceTd"><time datetime=3D"2019-02-17" clas=
+s=3D"date-past">17 Feb 2019</time>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br></strong></p>
+<h3 id=3D"Runbook-JiraupgradefromJira7.1.1tov7.12.1-Runbook:"><strong>Runbo=
+ok:&nbsp;</strong></h3>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh">&nbsp;</th>
+<th class=3D"confluenceTh"><span>Task</span></th>
+<th class=3D"confluenceTh">Owner</th>
+<th colspan=3D"1" class=3D"confluenceTh">Execution Date</th>
+<th class=3D"confluenceTh">Status</th>
+<th class=3D"confluenceTh">Time</th>
+<th class=3D"confluenceTh"><span>Details/Steps</span></th>
+<th class=3D"confluenceTh">Comments</th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">Raise Cyber ark access request for=
+ implementation of JIRA DTS</td>
+<td colspan=3D"1" class=3D"confluenceTd">Eng Team</td>
+<td colspan=3D"1" class=3D"confluenceTd"><time datetime=3D"2019-02-16" clas=
+s=3D"date-past">16 Feb 2019</time>&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 mins</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to <a href=3D"https://cyberark.fm.rbsgrp.net/PasswordVault/logon.=
+aspx?ReturnUrl=3D%2fPasswordVault%2f" class=3D"external-link" rel=3D"nofoll=
+ow">Cybearark</a> portal and get credentials for available cyberark account=
+ for prod implementation</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">2</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Bring down Apache for all JI=
+RA instances</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">5 mins</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to current JIRA server (<strong>LONRS10884</strong>)</li>
+<li>cd /opt/app/dts/atlassian/jira</li>
+<li>Bring down Apache service: ./jira-apache.sh stop</li>
+<li>Repeat steps for (<strong>LONRS10885,<strong>LONRS10886,<strong><strong=
+>LONRS13991 and LONRS13992</strong></strong>)</strong></strong></li>
+<li>Ensure all the apache processes have been stopped on all JIRA nodes</li=
+>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">Capture data before upgrade</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 mins</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login into production URL :<a href=3D"http://lonrs10884:8080/secure/Das=
+hboard.jspa" class=3D"external-link" rel=3D"nofollow">http://lonrs10884:808=
+0/secure/Dashboard.jspa</a><br>a.Go to Administration console &gt; System &=
+gt; System info --&gt;<br>b.Capture the Server info, JIRA info and Database=
+ statistics&nbsp;on<br>&nbsp;<a href=3D"https://confluence.dts.fm.rbsgrp.ne=
+t/display/DTSENG/Captured+data" class=3D"external-link" rel=3D"nofollow">Co=
+nfluence page</a></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd"><span>Bring down tomcat for all JIRA instance</s=
+pan></td>
+<td class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td class=3D"confluenceTd">Done</td>
+<td class=3D"confluenceTd">20 mins</td>
+<td class=3D"confluenceTd">
+<ol>
+<li>Login to JIRA server (<strong>LONRS10884</strong>) with proddts access<=
+/li>
+<li>cd /opt/app/dts/atlassian/jira</li>
+<li>Bring down tomcat service: ./jiractls stop</li>
+<li>Repeat steps for (<strong>LONRS10885,<strong>LONRS10886,<strong><strong=
+>LONRS13991 and LONRS13992</strong></strong>)</strong></strong></li>
+<li>Ensure all the tomcat processes have been stopped on all JIRA nodes</li=
+>
+</ol></td>
+<td class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">Communicate with DBA team to take =
+the DB backup</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">1 hour</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Send an email to DBA team to start DB backup activity.</li>
+<li>Follow up and work with DBA team for DB backup.</li>
+<li>Get confirmation from DBA team</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>During DB backup we will w=
+ork on Step 6 for JIRA file systme backup</strong></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">6</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Backup files</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">1 hour</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Take a backup of local home and shared home except attachement<strong><=
+br></strong>b. cp /opt/app/dts/atlassian/jira&nbsp; /data/edcdtsjirasdprd/j=
+ira_bkp<br>c. rsync -av --progress /data/dtsjiraprd/shared_jira-dts_home /d=
+ata/dtsjiraprd/shared_jira-dts_home.bkp --exclude data --exclude export --e=
+xclude import --exclude logs</li>
+<li>Repeat the above step for local_home only for remaining all nodes(<stro=
+ng>LONRS10885</strong><strong>, <strong>LONRS10886,<strong><strong>LONRS139=
+91,LONRS13992</strong></strong></strong></strong>)</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">7</td>
+<td colspan=3D"1" class=3D"confluenceTd">Capture Permission schemes IDs fro=
+m database</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">5 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to Database with below details</li>
+</ol><p>URL:jdbc:oracle:thin:@<a class=3D"external-link" href=3D"http://lon=
+rs29953.fm.rbsgrp.net/" rel=3D"nofollow">lonrs29953.fm.rbsgrp.net</a>:1634/=
+POGBDTS4</p><p>User name:JIRADTS_APP_OWNER</p><p>Password : XXXXXX</p><p>Ex=
+ecute query : select id from permissionscheme</p><p><strong>Note</strong> :=
+ Save the results like [10872,20672,24999,26871,28173,27276] this format fo=
+r all ids obtained, Save <a href=3D"https://confluence.dts.fm.rbsgrp.net/di=
+splay/DTSENG/Captured+data" class=3D"external-link" rel=3D"nofollow">here</=
+a></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">This query results are required to=
+ disable <strong>Extended</strong> <strong>Project administration </strong>=
+for all permission schemes in step 14.</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd">Setup JIRA v7.12.1 binaries</td>
+<td class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td class=3D"confluenceTd">Done</td>
+<td class=3D"confluenceTd">1 hour</td>
+<td class=3D"confluenceTd">
+<ol>
+<li>Login into : <strong>LONRS10884</strong></li>
+<li>Setup binaries <br>a. cd /opt/app/dts/atlassian/jira<br>b. wget --no-ch=
+eck-certificate <a href=3D"https://artifactory-1.dts.fm.rbsgrp.net/artifact=
+ory/list/puppet-installer-packages-local/com/atlassian/atlassian-jira/7.12.=
+1/atlassian-jira-software-7.12.1.zip" class=3D"external-link" rel=3D"nofoll=
+ow">https://artifactory-1.dts.fm.rbsgrp.net/artifactory/list/puppet-install=
+er-packages-local/com/atlassian/atlassian-jira/7.12.1/atlassian-jira-softwa=
+re-7.12.1.zip</a></li>
+<li>unzip atlassian-jira-software-7.12.1.zip</li>
+<li><p>Update Setenv.sh <br>a.vim /opt/app/dts/atlassian/jira/atlassian-jir=
+a-software-7.12.1-standalone/bin/setenv.sh</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Setenv</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">JIRA_HO=
+ME=3D"/opt/app/dts/atlassian/jira/jira_home"
+&nbsp;
+JVM_MINIMUM_MEMORY=3D"32g"
+JVM_MAXIMUM_MEMORY=3D"32g"</pre>=20
+</div>
+</div></li>
+<li><p>Update server.xml</p><p>a.cp <span>/opt/app/dts/atlassian/jira/atlas=
+sian-jira-software-7.12.1-standalone/conf/server.xml <span>/opt/app/dts/atl=
+assian/jira/atlassian-jira-software-7.12.1-standalone/conf/server.xml.bk.ji=
+ra7.12.</span></span></p><p>b. Update connector on server.xml from JIRA 7.1=
+.1<br>vim /opt/app/dts/atlassian/jira/<span>atlassian-jira-software-7.12.1-=
+standalone</span>/conf/server.xml</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Server.xml</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">&lt;Con=
+nector acceptCount=3D"150" connectionTimeout=3D"20000"
+               disableUploadTimeout=3D"true" enableLookups=3D"false"
+               maxHttpHeaderSize=3D"8192" maxThreads=3D"200"
+               minSpareThreads=3D"25"
+               redirectPort=3D"8443"
+               scheme=3D"https"
+               proxyPort=3D"443"
+               proxyName=3D"jira-dts.fm.rbsgrp.net"
+               port=3D"8180" protocol=3D"HTTP/1.1"
+               useBodyEncodingForURI=3D"true"
+             /&gt;
+             &lt;!-- Standard HTTP Connector --&gt;
+              &lt;Connector acceptCount=3D"150" connectionTimeout=3D"20000"
+               disableUploadTimeout=3D"true" enableLookups=3D"false"
+               maxHttpHeaderSize=3D"8192" maxThreads=3D"200"
+               minSpareThreads=3D"25" port=3D"8080"
+               protocol=3D"HTTP/1.1" redirectPort=3D"8443" useBodyEncodingF=
+orURI=3D"true"/&gt; bindOnInit=3D"false" relaxedPathChars=3D"[]|" relaxedQu=
+eryChars=3D"[]|{}^&amp;#x5c;&amp;#x60;&amp;quot;&amp;lt;&amp;gt;"/&gt;</pre=
+>=20
+</div>
+</div></li>
+<li><p>Update jira-application.properties<br>a.vim /opt/app/dts/atlassian/j=
+ira/<span>atlassian-jira-software-7.12.1-standalone</span>/atlassian-jira/W=
+EB-INF/classes/jira-application.properties</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>jira-application.properties</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">jira.ho=
+me=3D/opt/app/dts/atlassian/jira/jira_home</pre>=20
+</div>
+</div></li>
+<li><p>copy the Supported DB driver file : cd /opt/app/dts/atlassian/jira<s=
+pan>/</span><span>atlassian-jira-software-7.12.1-standalone</span>/lib/</p>=
+<p>a.wget --no-check -certificate &nbsp;<a href=3D"https://artifactory-1.dt=
+s.fm.rbsgrp.net/artifactory/list/puppet-installer-packages-local/com/atlass=
+ian/atlassian-jira/7.12.1/DB%20driver/ojdbc8.jar" class=3D"external-link" r=
+el=3D"nofollow">https://artifactory-1.dts.fm.rbsgrp.net/artifactory/list/pu=
+ppet-installer-packages-local/com/atlassian/atlassian-jira/7.12.1/DB%20driv=
+er/ojdbc8.jar</a></p></li>
+<li><p><span>copy jiract1 --&gt; cp /opt/app/dts/atlassian/jira/atlassian-j=
+ira-software-7.1.1-standalone/bin/jiractl </span><span>/opt/app/dts/atlassi=
+an/jira/<span>atlassian-jira-software-7.12.1-standalone</span></span><span>=
+/bin/</span></p></li>
+<li><p>Create softlinks<br>a.ln -sfn /opt/app/dts/atlassian/jira/<span>atla=
+ssian-jira-software-7.12.1-standalone</span>/ current</p><p>b. ln -sfn /opt=
+/app/dts/atlassian/jira/<span>atlassian-jira-software-7.12.1-standalone</sp=
+an>/bin/jiractl jiractl</p></li>
+<li><p>Repeat the above steps for remainig all nodes =E2=80=93 <span>(</spa=
+n><strong>LONRS10885,<strong>LONRS10886,LONRS13991,LONRS13992)</strong></st=
+rong></p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>Check the differences of server.xml for 7.1.1=
+ and 7.12.1</p><p><strong><br></strong></p><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">9</td>
+<td colspan=3D"1" class=3D"confluenceTd">Startup the JIRA tomcat Server</td=
+>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">2 hour</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Once we will get the confirmati=
+on from DBA team for DB backup, we will proceed with below steps</p>
+<ol>
+<li>Login into : <strong>LONRS10884</strong><span><br></span></li>
+<li><span>Start the JIRA DTS tomcat server</span><br><span>a. <span>cd /opt=
+/app/dts/atlassian/jira/</span></span><br><span><span>b.<span>Run --&gt; ./=
+jiractl start</span></span></span><br><span><span>c.<span>check the logs af=
+ter server starts</span></span></span><br>d.<span>cd /opt/app/dts/atlassian=
+/jira/current/logs/</span><br><span>e.<span>tail -f catalina.log</span></sp=
+an></li>
+</ol><p><span><strong>Note: </strong>if tomcat start successfully then proc=
+eed to next step</span></p><p><span>3.<span>Repeat the above steps for rema=
+inig all nodes =E2=80=93 </span><span>(</span><strong>LONRS10885,<strong>LO=
+NRS10886,<strong><strong>LONRS13991,LONRS13992</strong></strong>)</strong><=
+/strong></span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Please attache log file during upg=
+rade<strong> <a href=3D"https://confluence.dts.fm.rbsgrp.net/display/DTSENG=
+/Captured+data" class=3D"external-link" rel=3D"nofollow">Confluence page</a=
+></strong></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">10</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Verify and Upgrade addons</s=
+pan></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">1 hour</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Go to Add-ons in admin section</li>
+<li>Click on upload add-ons and paste <a href=3D"https://artifactory-1.dts.=
+fm.rbsgrp.net/artifactory/list/puppet-installer-packages-local/com/atlassia=
+n/atlassian-jira/7.12.1/Plugins/groovyrunner-5.4.30.jar" class=3D"external-=
+link" rel=3D"nofollow">url</a> and click upload. this for Script runner add=
+-on</li>
+<li>Repeat above stpes for all add-ons listed in <a href=3D"https://conflue=
+nce.dts.fm.rbsgrp.net/display/DTSENG/Add-Ons+for+Jira+v7.1.1+and+v7.12.1" c=
+lass=3D"external-link" rel=3D"nofollow">Supported add-ons</a> (Copy appropr=
+iate add-on url)<br><br></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">11</td>
+<td colspan=3D"1" class=3D"confluenceTd">Zephyr plugin table changes in DB<=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">1 hour</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>If Zephyr test execution fails in above step follow this runbook to fix=
+.<br><a href=3D"https://confluence.dts.fm.rbsgrp.net/pages/viewpage.action?=
+pageId=3D373805793" class=3D"external-link" rel=3D"nofollow">Runbook-Zephyr=
+ test execution failed</a></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>This step will follow when Zeph=
+yr test execution fails with SQL exception.(vendor suggestion)</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">12</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Re-Indexing</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">3 hours</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to <a href=3D"https://jira-dts.fm.rbsgrp.net/" class=3D"external-=
+link" rel=3D"nofollow">URL</a> With Admin rights</li>
+<li>Go to Administration console &gt; System =E2=80=93 Click Indexing in ad=
+vanced console and then start reindex</li>
+<li>Check the logs during the reindex<br> a. cd /opt/app/dts/atlassian/jira=
+/current/logs/<br> b. tail -f catalina.log =E2=80=93 check the logs</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">13</td>
+<td colspan=3D"1" class=3D"confluenceTd">Zephyr Re-index</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">45 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login into production URL :&nbsp;<a class=3D"external-link" href=3D"htt=
+p://jira-dts.fm.rbsgrp.net/" rel=3D"nofollow">http://jira-dts.fm.rbsgrp.net=
+</a>&nbsp;</li>
+<li>Go to Administration console &gt; Add-ons &gt; general Configuration in=
+ Zephyr for JIRA &gt; Re-index</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">14</td>
+<td colspan=3D"1" class=3D"confluenceTd">Disable Project administration per=
+missions, As we created list in Step-7</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Go to <a href=3D"http://lonrs12320.fm.rbsgrp.net:8080/swagger-ui.html" =
+class=3D"external-link" rel=3D"nofollow">http://lonrs12320.fm.rbsgrp.net:80=
+80/swagger-ui.html</a></li>
+<li>Enter user name(dsp) and password (XXX)</li>
+<li>Serach for POST /disableExtendedPermission/{instance}</li>
+<li>Click on POST button.(Space will open)</li>
+<li>Go to instance text field . Give value JIRA-PROD</li>
+<li>In <span style=3D"color: rgb(0,0,0);">permissionSchemeIds field give va=
+lues from step 6 -&gt; Results in given format.</span></li>
+<li><span style=3D"color: rgb(0,0,0);">Click on Try it out .</span></li>
+<li><span style=3D"color: rgb(0,0,0);">Verify response from Response Body .=
+ For each permission scheme id response code should be 204.</span></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>New </span><span>JIRA Funcio=
+tnality</span></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">15</td>
+<td colspan=3D"1" class=3D"confluenceTd">Disabling empty JQL queries</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">5 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to <a href=3D"https://jira-dts.fm.rbsgrp.net/" class=3D"external-=
+link" rel=3D"nofollow">URL</a> With Admin rights</li>
+<li><span>Go to Administration console &gt; System &gt;General configaratio=
+n &gt; Edit settings &gt; </span></li>
+<li><span>Make <span style=3D"color: rgb(23,43,77);">Disable empty JQL quer=
+ies "ON"</span></span></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">New JIRA Funciotnality</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">16</td>
+<td colspan=3D"1" class=3D"confluenceTd">Change dropdown text colour</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">5 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to <a href=3D"https://jira-dts.fm.rbsgrp.net/" class=3D"external-=
+link" rel=3D"nofollow">URL</a> With Admin rights</li>
+<li>Go to Administration console &gt; System &gt; Look and feel</li>
+<li>Change <strong class=3D"property-name">Menu Item Highlight Text Colour<=
+/strong><strong class=3D"property-name">(#ffffff)</strong><strong class=3D"=
+property-name"><br></strong></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">17</td>
+<td colspan=3D"1" class=3D"confluenceTd">Smoke Testing</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">30 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">Check the System info for Upgraded=
+ versions, DB statsistics, Application Links and functional testing</td>
+<td colspan=3D"1" class=3D"confluenceTd">Note: application link with JIRA t=
+o Bitbucket is working partially</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">18</td>
+<td colspan=3D"1" class=3D"confluenceTd">Start the Apache server</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login into <strong>LONRS10884</strong></li>
+<li>cd <span>/opt/app/dts/atlassian/jira/</span></li>
+<li><span>./apache_startup start (check the softlink)</span></li>
+<li><span>Repeat the above steps for <span>(</span><strong>LONRS10885)</str=
+ong></span><span><strong><strong><br></strong></strong></span></li>
+<li><p>Login to JIRA node - lonrs13991</p><p>a. Bring Up Apache services</p=
+><p>b. cd /opt/app/dts/atlassian/jira/</p><p>c. /apache_startup start</p><p=
+><strong>Note: </strong>Repeat the above steps for (<strong><strong><strong=
+><strong>LONRS13991,LONRS13992)</strong></strong></strong></strong></p></li=
+>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>lonrs10884,<span>lonrs10885<spa=
+n>,<span>lonrs13991<span>,lonrs13992</span></span></span></span></p><p>&nbs=
+p;</p><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">19</td>
+<td colspan=3D"1" class=3D"confluenceTd">OAT Testing</td>
+<td colspan=3D"1" class=3D"confluenceTd">Ops Team</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">2 hours</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Execute the test steps <span class=3D"aui-message aui-message-warning j=
+im-error-message jim-error-message-single"> <span class=3D"icon-in-pdf"></s=
+pan> Unable to render Jira issues macro, execution error. </span> </li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Note: application link with =
+</span><span>JIRA to </span><span>Bitbucket is working partially, this is k=
+nown issue as Bitbucket had sha1 cirtificate.</span></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">20</td>
+<td colspan=3D"1" class=3D"confluenceTd">Send notification to users</td>
+<td colspan=3D"1" class=3D"confluenceTd">Ops Team</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">Send notification to all users tha=
+t please start using JIRA application upgraded version 7.12- <a href=3D"htt=
+ps://jira-dts.fm.rbsgrp.net/" class=3D"external-link" rel=3D"nofollow">http=
+s://jira-dts.fm.rbsgrp.net/</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">21</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><strong>DR Setup</strong></p><p=
+>Setup JIRA v7.12.1 on DR servers</p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Eng Team</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;</span><time datetime=
+=3D"2019-02-16" class=3D"date-past">16 Feb 2019</time><span>&nbsp;</span><s=
+pan>&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">2 hour</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li><span>Login into : </span><strong>LONRS13133</strong></li>
+<li>Copy the bainaries <br>a.<span>cd /opt/app/dts/atlassian/jira/</span><b=
+r>b. rsync -avzh proddts@lonrs10884$/opt/app/dts/atlassian/jira/atlassian-j=
+ira-software-7.12.1-standalone /opt/app/dts/atlassian/jira/</li>
+<li>backup localhome<br>cp /opt/app/dts/atlassian/jira/jira-dts_home_lonrs1=
+3133 /data/dtsjiraprd/<span>jira-dts_home_lonrs13133.bkp</span></li>
+<li>Copy local home<br>a.<strong>rsync -avzh proddts@lonrs10884$/opt/app/dt=
+s/atlassian/jira/jira-dts_home_lonrs10884 /opt/app/dts/atlassian/jira/<span=
+>jira-dts_home_lonrs13133</span></strong></li>
+<li><p>Create softlinks<br>a.ln -sfn /opt/app/dts/atlassian/jira/atlassian-=
+jira-software-7.12.1-standalone/atlassian-jira/ current</p><p>b. ln -sfn /o=
+pt/app/dts/atlassian/jira/atlassian-jira-software-7.12.1-standalone/bin/jir=
+actl jiractl</p></li>
+<li><p>change cluster.properties<br>a. vim /opt/app/dts/atlassian/jira/jira=
+_home/cluster.properties<br>b. set jira.node.id =3D lonrs13133<br><strong>N=
+ote:</strong>Repeat the above steps for remaining nodes(<strong>LONRS13134,=
+<strong>LONRS13135,<strong>LONRS13136,lonrs12007)</strong></strong></strong=
+></p></li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li><strong>We will setup the JIRA v7.12.1 binaries on DR Servers during re=
+-indexing (Step-12)</strong></li>
+<li><strong><span>DR nodes - lonrs13133,lonrs13134,lonrs13135,lonrs13136,lo=
+nrs12007</span></strong></li>
+</ol><p><strong><br></strong></p><p>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3 id=3D"Runbook-JiraupgradefromJira7.1.1tov7.12.1-RollbackPlan:ifanyofthe=
+steps8-19notexecutedsuccessfullythenexecutetherollbackplan."><strong>Rollba=
+ck Plan:</strong>&nbsp; if&nbsp;any of the steps 8 - 19 not executed succes=
+sfully then execute the rollback plan.</h3>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh">&nbsp;</th>
+<th class=3D"confluenceTh">&nbsp;task</th>
+<th class=3D"confluenceTh">Owner</th>
+<th class=3D"confluenceTh">Status</th>
+<th class=3D"confluenceTh">Time</th>
+<th class=3D"confluenceTh">Details/Steps</th>
+<th class=3D"confluenceTh">Comments</th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">Stop Apache and Tomcat</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Done</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to JIRA node - lonrs10884</li>
+<li>Bring down Apache and tomact services
+<ol>
+<li>cd /opt/app/dts/atlassian/jira/</li>
+<li>./jira-apachectrl.sh stop</li>
+<li>./jiractI stop</li>
+</ol></li>
+</ol><p><strong>Note:</strong>&nbsp;Repeat the above steps for (lonrs10885,=
+lonrs10886)</p><p>4. Login to JIRA node - lonrs13991</p><p>5. Bring down Ap=
+ache and tomcat services</p><p>a. cd /opt/app/dts/atlassian/jira/</p><p>b. =
+./apache_startup stop</p><p>c. ./jiractI stop</p><p><strong>Note:</strong>&=
+nbsp;Repeat the above steps for lonrs13992</p></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">DB backup import</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Done</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">1 hour 30 mins</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Send email to DBA team to start DB import activity (backup should be sa=
+me as DBA taken in runbook steps- 5)</li>
+<li>Wait until DBA confirmation for DB backup import successfully completed=
+.</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">Start Tomcat servers</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Done</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to JIRA node - lonrs10884</li>
+<li><p>Create softlinks<br>a.<span>cp /data/edcdtsjirasdprd/jira_bkp <span>=
+/opt/app/dts/atlassian/jira</span></span></p></li>
+<li>Bring Up tomact services
+<ol>
+<li>cd /opt/app/dts/atlassian/jira/</li>
+<li>./jiractI start</li>
+</ol></li>
+</ol><p><strong>Note:</strong>&nbsp;Repeat the above steps for (lonrs10885,=
+lonrs10886)</p><p>4. Login to JIRA node - lonrs13991</p><p>5. Bring Up tomc=
+at services</p><p>a. cd /opt/app/dts/atlassian/jira/</p><p>b. ./jiractI sta=
+rt</p><p><strong>Note:</strong>&nbsp;Repeat the above steps for lonrs13992<=
+/p></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">JIRA reindex</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Done</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>3 hours</p></td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login into production tomcat url&nbsp;<a class=3D"external-link" href=
+=3D"http://lonrs10884:8080/secure/Dashboard.jspa" rel=3D"nofollow">http://l=
+onrs10884:8080/secure/Dashboard.jspa</a></li>
+<li>Go to System &gt; indexing &gt; Click on &gt; Lock JIRA and rebuild ind=
+ex</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">Start Apache</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Eng Team</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Login to JIRA node - lonrs10884</li>
+<li>Bring Up Apache service
+<ol>
+<li>cd /opt/app/dts/atlassian/jira/</li>
+<li>./jira-apachectrl.sh start</li>
+</ol></li>
+</ol><p><strong>Note:</strong>&nbsp;Repeat the above steps for (lonrs10885 =
+and lonrs10886)</p><p>4. Login to JIRA node - lonrs13991</p><p>5. Bring Up =
+Apache services</p><p>a. cd /opt/app/dts/atlassian/jira/</p><p>b. /apache_s=
+tartup start</p><p><strong>Note:</strong>&nbsp;Repeat the above steps for l=
+onrs13992</p></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd" colspan=3D"1">6</td>
+<td colspan=3D"1" class=3D"confluenceTd">Send notification to users</td>
+<td colspan=3D"1" class=3D"confluenceTd">Ops Team</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Done</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Send notification to all users =
+that please start using exisitng JIRA 7.1.1 application version.</p><p><a h=
+ref=3D"https://jira-dts.fm.rbsgrp.net/" class=3D"external-link" rel=3D"nofo=
+llow">https://jira-dts.fm.rbsgrp.net/</a></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_0_820582151.1563554213577--
