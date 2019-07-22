@@ -1,0 +1,608 @@
+Message-ID: <579689466.9519.1563774186536.JavaMail.proddts@lonrs13993>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_9518_1950310325.1563774186536"
+
+------=_Part_9518_1950310325.1563774186536
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>JIRA SQL queries</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>JIRA SQL queries</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h1 id=3D"JIRASQLqueries-PfordeletingEmptyFiltersandFilterwhicharecreatedby=
+InactiveUsers">P for deleting Empty Filters and Filter which are created by=
+ Inactive Users</h1>
+<p>&nbsp; &nbsp; The criteria is to identify the Filters which are created =
+by Inactive Users and&nbsp;popularity &lt;=3D1.</p>
+<p><a href=3D"https://confluence.dts.fm.rbsgrp.net/download/attachments/402=
+660146/empty%20filters.xlsx?version=3D1&amp;modificationDate=3D155608145400=
+0&amp;api=3Dv2" rel=3D"nofollow">empty filters.xlsx</a>&nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href=3D"https://c=
+onfluence.dts.fm.rbsgrp.net/download/attachments/402660146/Filters%20create=
+d%20by%20inactive%20users.xlsx?version=3D2&amp;modificationDate=3D155608145=
+5000&amp;api=3Dv2" rel=3D"nofollow">Filters created by inactive users.xlsx<=
+/a></p>
+<ol>
+<li>Execute below query to get list of filters which are created by inactiv=
+e users.<br><br><strong><code class=3D"java plain">Select * from searchrequ=
+est where AUTHORNAME in (SELECT u.user_name from cwd_user u join cwd_direct=
+ory d on u.directory_id =3D <a href=3D"http://d.id" class=3D"external-link"=
+ rel=3D"nofollow">d.id</a> where u.active =3D&nbsp;</code><code class=3D"ja=
+va value">0</code></strong><code class=3D"java plain"><strong>) and fav_cou=
+nt &lt;=3D1 ;</strong></code><br><code class=3D"java plain"><strong>Note:&n=
+bsp;</strong>Export the results and save the id's in CSV format</code><br><=
+code class=3D"java plain"><br></code></li>
+<li><code class=3D"java plain">execute below query to get filters created b=
+y inactive users but used and remove these filters from deletion list.</cod=
+e><br><span><br></span><br><strong>SELECT SAVED_FILTER_ID FROM "AO_60DB71_R=
+APIDVIEW" WHERE "SAVED_FILTER_ID"&nbsp; IN (select id&nbsp; from portalpage=
+ where USERNAME in (SELECT u.user_name from cwd_user u join cwd_directory d=
+</strong><br><strong>on u.directory_id =3D <a href=3D"http://d.id" class=3D=
+"external-link" rel=3D"nofollow">d.id</a></strong><strong>&nbsp;where u.act=
+ive =3D 0) and&nbsp; FAV_COUNT &lt;=3D1);</strong><br><strong>Note:&nbsp;<s=
+trong>Note:&nbsp;</strong></strong>Export the results and save the id's in =
+CSV format and delete this list from above query-1 results</li>
+<li><p><code class=3D"java plain">execute below query to get filters create=
+d by inactive users but used in Boards and remove these filters from deleti=
+on list.</code><br><br><strong>SELECT SAVED_FILTER_ID FROM "AO_60DB71_RAPID=
+VIEW" WHERE "SAVED_FILTER_ID"&nbsp; IN (select id&nbsp; from Searchrequest =
+where USERNAME in (SELECT u.user_name from cwd_user u join cwd_directory d&=
+nbsp;</strong><br><strong>on u.directory_id =3D&nbsp;<a class=3D"external-l=
+ink" rel=3D"nofollow" href=3D"http://d.id/">d.id</a></strong><strong>&nbsp;=
+where u.active =3D 0) and&nbsp; FAV_COUNT &lt;=3D1);</strong><br><strong>No=
+te:&nbsp;<strong>Note:&nbsp;</strong></strong>Export the results and save t=
+he id's in CSV format and delete this list from above query-1 results</p></=
+li>
+<li><p><code class=3D"java plain">execute below query to get filters create=
+d by inactive users but shared view permission.</code><br><br><strong>SELEC=
+T ENTITYID from SHAREPERMISSION where ENTITYID&nbsp; IN (select id&nbsp; fr=
+om Searchrequest where USERNAME in (SELECT u.user_name from cwd_user u join=
+ cwd_directory d&nbsp;</strong><br><strong>on u.directory_id =3D&nbsp;<a hr=
+ef=3D"http://d.id/" rel=3D"nofollow" class=3D"external-link">d.id</a></stro=
+ng><strong>&nbsp;where u.active =3D 0) and&nbsp; FAV_COUNT &lt;=3D1);</stro=
+ng><br><strong>Note:&nbsp;<strong>Note:&nbsp;</strong></strong>Export the r=
+esults and save the id's in CSV format and delete this list from above quer=
+y-1 results</p></li>
+<li><p>Execute below query to get list if empty filters.</p><pre><strong>SE=
+LECT&nbsp;<a class=3D"external-link" href=3D"http://s.id/" rel=3D"nofollow"=
+>s.id</a>&nbsp; ,<a class=3D"external-link" rel=3D"nofollow" href=3D"http:/=
+/sp.id/">sp.id</a>,sp.entityid , sp.sharetype, sp.PARAM1 , s.reqcontent</st=
+rong><br><strong>FROM&nbsp;searchrequest s&nbsp;LEFT&nbsp;JOIN&nbsp;sharepe=
+rmissions</strong><br><strong>sp&nbsp;ON&nbsp;sp.entityid =3D s.ID&nbsp;WHE=
+RE&nbsp;&nbsp;&nbsp;s.REQCONTENT&nbsp;is&nbsp;null&nbsp;OR&nbsp;dbms_lob.ge=
+tlength(TRIM (REQCONTENT)) =3D 0&nbsp;and&nbsp;sp.entitytype=3D&nbsp;'Searc=
+hRequest'</strong></pre><pre><strong>&nbsp;</strong></pre><p><strong>Note:&=
+nbsp;</strong>Export the results and save the id's in CSV format</p><pre>&n=
+bsp;</pre></li>
+<li><pre>First we hould delete data from <strong>sharepermissions</strong> =
+table, because its has the primarykey which used as foreinkey in searchrequ=
+est table.</pre><pre><strong><code class=3D"java plain">delete from sharepe=
+rmissions where ENTITYID in (&lt;</code><code class=3D"java plain">provide =
+the ids here which derived from above querys</code><code class=3D"java plai=
+n">&gt;);</code></strong></pre><pre><strong><code class=3D"java plain"><br>=
+</code></strong></pre></li>
+<li><pre>After deleting data from sharepermissions then we need perform sam=
+e from searchrequest table</pre><pre><strong><code class=3D"java plain">del=
+ete from searchrequest where ID in (&lt;</code><code class=3D"java plain">p=
+rovide the ids here which derived from above querys</code><code class=3D"ja=
+va plain">&gt;</code><code class=3D"java plain">) ;</code></strong></pre><p=
+re>&nbsp;</pre><h5 id=3D"JIRASQLqueries-Note:Executecommitafterexecutingabo=
+vequeriesandthenre-execute1stand3rdqueriestoconformthatfiltershasbeendelete=
+dornottheresultsshouldbeempty."><span style=3D"color: rgb(0,0,0);">Note: Ex=
+ecute commit after executing above queries and then re-execute 1st and 3rd =
+queries to conform that filters has been deleted or not the results should =
+be empty.</span></h5><pre>a. <strong><code class=3D"java plain">select * fr=
+om searchrequest where AUTHORNAME in (SELECT u.user_name from cwd_user u jo=
+in cwd_directory d on u.directory_id =3D d.id where u.active =3D&nbsp;</cod=
+e><code class=3D"java value">0</code></strong><code class=3D"java plain"><s=
+trong>) and fav_count &lt;=3D1 ;</strong></code></pre><pre><code class=3D"j=
+ava plain"><strong>b.</strong></code><strong>SELECT s.id, sp.id, sp.entityi=
+d , sp.sharetype, sp.PARAM1 , s.reqcontent </strong><strong>FROM searchrequ=
+est s LEFT JOIN sharepermissions sp </strong><strong>ON sp.entityid =3D s.I=
+D WHERE s.REQCONTENT is null OR dbms_lob.getlength(TRIM (REQCONTENT)) =3D 0=
+ and sp.entitytype=3D 'SearchRequest'</strong></pre></li>
+</ol>
+<ul>
+<li>&nbsp;Atlassian&nbsp; discourage users for making any changes directly =
+from the database .but REST Apis dosen't have the permitions to delete priv=
+ate filters(Filters not shared) and&nbsp;RESTApi its not removing the data =
+of shared information of&nbsp; filter, because its stored in another table.=
+</li>
+</ul>
+<p><br></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><a style=3D"font-size: 24.0px;letter-spacing: -0.01em;" href=3D"https://=
+confluence.dts.fm.rbsgrp.net/display/DTS/SOP+for+boards+and+dashboard+clean=
+up+activity" rel=3D"nofollow">SOP for boards and dashboard cleanup activity=
+</a></p>
+<p><br></p>
+<ul>
+<li>Connect to&nbsp;JIRA PROD database via SQL Developer and then execute b=
+elow queries&nbsp;</li>
+<li>The current data can be vary after deleting empty filters and filters w=
+hich are created by inactive users.&nbsp;</li>
+</ul>
+<p><br></p>
+<p><strong>Query for Dashboards created by Inactive Users</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><code class=3D"java value">1</code><code clas=
+s=3D"java plain">.Execute the below query to get list of Dashboards which a=
+re created by Inactive Users</code><br><code class=3D"java spaces">&nbsp;</=
+code>&nbsp;<br><code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;</code><code class=3D"java plain">select count(*) from portalpage=
+ where USERNAME in (SELECT u.user_name from cwd_user u join cwd_directory d=
+ on u.directory_id =3D <a href=3D"http://d.id" class=3D"external-link" rel=
+=3D"nofollow">d.id</a> where u.active =3D&nbsp;</code><code class=3D"java v=
+alue">0</code><code class=3D"java plain">) and&nbsp; FAV_COUNT &lt;=3D</cod=
+e><code class=3D"java value">1</code><code class=3D"java plain">;&nbsp;</co=
+de><br><code class=3D"java spaces">&nbsp;</code>&nbsp;<br><code class=3D"ja=
+va value">2</code><code class=3D"java plain">.To delete those data from Dat=
+abase execute below query</code><br><code class=3D"java spaces">&nbsp;</cod=
+e>&nbsp;<br><code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;</code><code class=3D"java plain">delete from portalpage where ID in (sele=
+ct ID from portalpage where USERNAME in (SELECT u.user_name from cwd_user u=
+ join cwd_directory d on u.directory_id =3D <a href=3D"http://d.id" class=
+=3D"external-link" rel=3D"nofollow">d.id</a> where u.active =3D&nbsp;</code=
+><code class=3D"java value">0</code><code class=3D"java plain">) and FAV_CO=
+UNT &lt;=3D</code><code class=3D"java value">1</code><code class=3D"java pl=
+ain">);</code><br><code class=3D"java spaces">&nbsp;</code>&nbsp;<br><code =
+class=3D"java value">3</code><code class=3D"java plain">. Execute commit af=
+ter executing above queries and then re-execute the first query to conform =
+that dashboards has been deleted or not</code><br><code class=3D"java space=
+s">&nbsp;&nbsp;</code>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp; &nbsp; &nbsp;Results:&nbsp; &nbsp;&nbsp;<a href=3D"https://conflu=
+ence.dts.fm.rbsgrp.net/download/attachments/416491477/dashboards%20created%=
+20by%20inactive%20users.xlsx?version=3D1&amp;modificationDate=3D15519504670=
+00&amp;api=3Dv2" rel=3D"nofollow">dashboards created by inactive users.xlsx=
+</a><br><strong>Boards without filters</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><code class=3D"java spaces">&nbsp;</code><cod=
+e class=3D"java plain">Query:&nbsp; SELECT * FROM&nbsp;</code><code class=
+=3D"java string">"AO_60DB71_RAPIDVIEW"</code>&nbsp;<code class=3D"java plai=
+n">WHERE&nbsp;</code><code class=3D"java string">"SAVED_FILTER_ID"</code>&n=
+bsp;<code class=3D"java plain">NOT IN (SELECT id FROM searchrequest);</code=
+><br>&nbsp;<br><code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;</code><code class=3D"java plain">to delete these we =
+should execute below query.</code><br>&nbsp;<br><code class=3D"java plain">=
+Query:&nbsp; delete FROM&nbsp;</code><code class=3D"java string">"AO_60DB71=
+_RAPIDVIEW"</code>&nbsp;<code class=3D"java plain">WHERE&nbsp;</code><code =
+class=3D"java string">"SAVED_FILTER_ID"</code>&nbsp;<code class=3D"java pla=
+in">NOT IN (SELECT id FROM searchrequest);</code><br><code class=3D"java sp=
+aces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class=3D=
+"java plain">Note: after&nbsp;</code><code class=3D"java keyword">this</cod=
+e>&nbsp;<code class=3D"java plain">execute&nbsp;</code><code class=3D"java =
+string">"Commit"</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"JIRASQLqueries-ProjectArchive">Project Archive&nbsp;</h3>
+<h3 id=3D"JIRASQLqueries-Overview"><strong>Overview&nbsp;</strong></h3>
+<ul>
+<li>&nbsp;All JIRA projects&nbsp;which were setup but have not been updated=
+ since last 6 months will be archived. All such JIRA projects&nbsp;should b=
+e listed out and an email communication would be sent out to JIRA&nbsp;&nbs=
+p;admin group members / project leads to review usage&nbsp;of&nbsp;these pr=
+ojects and revert within announced timelines. If no revert is received from=
+ email recipients, it would be treated as an agreement to Archive the proje=
+cts. Such projects would be &nbsp;Archived as per announced timelines. The =
+archived will be not accessible to the users, If any user required their pr=
+ojects then they should raise a request to un-archive. Archived projects ca=
+n accessible if we know direct URLs, But it is not editable .</li>
+</ul>
+<p><br></p>
+<p class=3D"title">Projects list which are Not Updated since past 6 months<=
+/p>
+<p>1. Execute the below query to get projects ids with Last updated date</p=
+>
+<p>SELECT project,UPDATED<br>FROM jiraissue je<br>WHERE UPDATED =3D (SELECT=
+ MAX (UPDATED)<br>FROM jiraissue jei<br>WHERE je.project =3D jei.project) a=
+nd Updated &lt; '01-SEP-18' order by UPDATED</p>
+<p>2. Execute the below query to get all details of projects for above quer=
+y project ids</p>
+<p>Select * from project&nbsp; where id in (SELECT project&nbsp; FROM jirai=
+ssue je WHERE UPDATED =3D (SELECT MAX (UPDATED) FROM jiraissue jei WHERE je=
+.project =3D jei.project) and Updated &lt; '01-SEP-18')&nbsp;</p>
+<p><br></p>
+<p>Results:&nbsp;<a href=3D"https://confluence.dts.fm.rbsgrp.net/download/a=
+ttachments/416491477/projectids.xlsx?version=3D1&amp;modificationDate=3D155=
+2450773000&amp;api=3Dv2" rel=3D"nofollow">projectids.xlsx</a>&nbsp;Refer sh=
+eet1 for combined results from both queries.</p>
+<p><strong>Archive projects USING REST APIs:&nbsp;</strong>Refer the page&n=
+bsp;<a rel=3D"nofollow" href=3D"https://docs.atlassian.com/software/jira/do=
+cs/api/REST/7.12.0/#api/2/project-archiveProject" class=3D"external-link">h=
+ttps://docs.atlassian.com/software/jira/docs/api/REST/7.12.0/#api/2/project=
+-archiveProject</a></p>
+<ul>
+<li>Get the list of project ids to be atchive.</li>
+<li>Prepage the REST Api to archive with this Syntax:&nbsp;<strong>&lt;URL&=
+gt;<span style=3D"color: rgb(80,80,80);">/rest/api/2/project/&lt;project ID=
+&gt;/archive&nbsp;</span></strong><span style=3D"color: rgb(80,80,80);">wit=
+h&nbsp;<strong>PUT</strong>&nbsp;Request.</span></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><br><strong>Query for users who not logedin since 6 months or more</stro=
+ng></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><code class=3D"java plain">SELECT d.active,d.=
+directory_name,</code><br><code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nb=
+sp;</code><code class=3D"java plain">u.user_name,</code><br><code class=3D"=
+java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code c=
+lass=3D"java plain">TO_DATE(</code><code class=3D"java string">'19700101'</=
+code><code class=3D"java plain">,</code><code class=3D"java string">'yyyymm=
+dd'</code><code class=3D"java plain">) + ((attribute_value/</code><code cla=
+ss=3D"java value">1000</code><code class=3D"java plain">)/</code><code clas=
+s=3D"java value">24</code><code class=3D"java plain">/</code><code class=3D=
+"java value">60</code><code class=3D"java plain">/</code><code class=3D"jav=
+a value">60</code><code class=3D"java plain">) as last_login_date</code><br=
+><code class=3D"java plain">FROM cwd_user u</code><br><code class=3D"java p=
+lain">JOIN (</code><br><code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;=
+</code><code class=3D"java plain">SELECT DISTINCT child_name</code><br><cod=
+e class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class=3D"java =
+plain">FROM cwd_membership m</code><br><code class=3D"java spaces">&nbsp;&n=
+bsp;&nbsp;&nbsp;</code><code class=3D"java plain">JOIN licenserolesgroup gp=
+ ON m.parent_name =3D gp.GROUP_ID</code><br><code class=3D"java spaces">&nb=
+sp;&nbsp;&nbsp;&nbsp;</code><code class=3D"java plain">) m ON m.child_name =
+=3D u.user_name</code><br><code class=3D"java plain">JOIN (</code><br><code=
+ class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class=3D"java p=
+lain">SELECT *</code><br><code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbs=
+p;</code><code class=3D"java plain">FROM cwd_user_attributes ca</code><br><=
+code class=3D"java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class=3D"ja=
+va plain">WHERE attribute_name =3D&nbsp;</code><code class=3D"java string">=
+'login.lastLoginMillis'</code><br><code class=3D"java spaces">&nbsp;&nbsp;&=
+nbsp;&nbsp;</code><code class=3D"java plain">) a ON a.user_id =3D u.ID</cod=
+e><br><code class=3D"java plain">JOIN&nbsp; cwd_directory d ON u.directory_=
+id =3D d.ID where d.active=3D</code><code class=3D"java value">1</code>&nbs=
+p;<code class=3D"java plain">and u.active=3D</code><code class=3D"java valu=
+e">1</code><br><code class=3D"java plain">order by last_login_date asc;</co=
+de><br><code class=3D"java spaces">&nbsp;</code>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>SEARCHREQUEST</strong>&nbsp;table used to store all filters.</p>
+<p><strong>SHAREPERMISSIONS</strong>&nbsp;table used to store either Search=
+Request or PortalPage entitytype.</p>
+<p><strong>SHAREPERMISSIONS</strong>&nbsp;table used to store either global=
+, group or project sharetype.</p>
+<p><br></p>
+<p>Meaning of&nbsp;<strong>SearchRequest entitype</strong>: A shareable rep=
+resentation of a search for issues. Officially known as a "Filter" or "Save=
+d Filter".</p>
+<p>Meaning of&nbsp;<strong>PortalPage entitype</strong>: This represents a =
+Dashboard page in JIRA. It includes dashboard meta data (name, description)=
+ as well as information about favouriting and share permissions.</p>
+<p><strong><u>ALL FILTER WHICH HAS SHARE TYPE AS "share with everyone" i.e.=
+ global WITH ALL SHARE TYPE</u></strong>&nbsp;</p>
+<p>SELECT<span class=3D"apple-converted-space">&nbsp;</span><a rel=3D"nofol=
+low" class=3D"external-link" href=3D"http://sr.id/">sr.id</a>, sr.filternam=
+e, sp.sharetype AS current_share_state, sr.reqcontent AS JQL<br>FROM search=
+request sr<br>INNER JOIN sharepermissions sp ON sp.entityid =3D<span class=
+=3D"apple-converted-space">&nbsp;</span><a class=3D"external-link" href=3D"=
+http://sr.id/" rel=3D"nofollow">sr.id</a><span class=3D"apple-converted-spa=
+ce">&nbsp;</span><br>WHERE sp.entitytype =3D'SearchRequest';</p>
+<p><strong><u><br></u></strong></p>
+<p><strong><u>RETRIEVE ALL BOARDS WITHOUT AN EXISTING SEARCH FILTER</u></st=
+rong>&nbsp;</p>
+<p>SELECT * FROM "AO_60DB71_RAPIDVIEW" WHERE "SAVED_FILTER_ID" NOT IN (SELE=
+CT id FROM searchrequest);</p>
+<p><br></p>
+<p><u><strong>Filters with boards:</strong></u></p>
+<p>select sr.ID as filter_id, sr.REQCONTENT as JQL, ar.ID as agile_board_id=
+,&nbsp;<a href=3D"http://ar.name/" class=3D"external-link" rel=3D"nofollow"=
+>ar.name</a>&nbsp;as agile_board_nam</p>
+<p>from SEARCHREQUEST sr inner join AO_60DB71_RAPIDVIEW ar</p>
+<p>on sr.ID =3D ar.SAVED_FILTER_ID;</p>
+<p><br></p>
+<p><u><strong>Filters without any boards:</strong></u></p>
+<p>select sr.ID as filter_id, sr.REQCONTENT as JQL, ar.ID as board_id,&nbsp=
+;<a class=3D"external-link" rel=3D"nofollow" href=3D"http://ar.name/">ar.na=
+me</a>&nbsp;as board_name</p>
+<p>from SEARCHREQUEST sr left join AO_60DB71_RAPIDVIEW ar</p>
+<p>on sr.ID =3D ar.SAVED_FILTER_ID where ar.SAVED_FILTER_ID is null;</p>
+<p><br></p>
+<h4 id=3D"JIRASQLqueries-RESTApitodeleteboards/filters">REST Api to delete =
+boards/filters</h4>
+<p><strong>To delete filters:</strong>&nbsp;<a href=3D"https://developer.at=
+lassian.com/cloud/jira/platform/rest/#api-api-2-filter-id-delete" class=3D"=
+external-link" rel=3D"nofollow">https://developer.atlassian.com/cloud/jira/=
+platform/rest/#api-api-2-filter-id-delete</a></p>
+<p>REST api:&nbsp;<a class=3D"external-link" rel=3D"nofollow" href=3D"https=
+://your-domain.atlassian.net/rest/api/2/filter/%7bid%7d">https://your-domai=
+n.atlassian.net/rest/api/2/filter/{id}</a></p>
+<p>HTTP method: DELETE</p>
+<p><br></p>
+<p><strong>To delete Agile boards</strong>:&nbsp;<a rel=3D"nofollow" href=
+=3D"https://developer.atlassian.com/cloud/jira/software/rest/#api-board-boa=
+rdId-delete" class=3D"external-link">https://developer.atlassian.com/cloud/=
+jira/software/rest/#api-board-boardId-delete</a></p>
+<p>REST api:&nbsp;<a href=3D"https://your-domain.atlassian.net/rest/agile/1=
+.0/board/%7bboardId%7d" rel=3D"nofollow" class=3D"external-link">https://yo=
+ur-domain.atlassian.net/rest/agile/1.0/board/{boardId}</a></p>
+<p>HTTP method: DELETE</p>
+<h4 id=3D"JIRASQLqueries-AtlassianCLItodeleteboards/filters">Atlassian CLI =
+to delete boards/filters</h4>
+<p>jira-cli.bat&nbsp;<br>--action deleteBoard&nbsp; --board "ZAGILE"&nbsp; =
+--deleteFilter 189</p>
+<p><br></p>
+<p>--action deleteBoard&nbsp; --id "811"&nbsp; --deleteFilter</p>
+<p><br></p>
+<p>--action deleteFilter&nbsp; --id "15014"</p>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_9518_1950310325.1563774186536--
