@@ -1,0 +1,419 @@
+Message-ID: <148154482.9523.1563774274756.JavaMail.proddts@lonrs13993>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_9522_486551472.1563774274756"
+
+------=_Part_9522_486551472.1563774274756
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Server.xml</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Server.xml</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<p><br></p>
+<p><strong>&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;</strong><br>&lt=
+;!--<br> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>Atlassian JIRA Standalone Edition Tomcat Configuration.</p>
+<p><br> See the following for more information</p>
+<p><a href=3D"http://confluence.atlassian.com/display/JIRA/Configuring+JIRA=
++Standalone" class=3D"external-link" rel=3D"nofollow">http://confluence.atl=
+assian.com/display/JIRA/Configuring+JIRA+Standalone</a></p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br> --&gt;<br>&lt;!--<br> Licensed to the Ap=
+ache Software Foundation (ASF) under one or more<br> contributor license ag=
+reements. See the NOTICE file distributed with<br> this work for additional=
+ information regarding copyright ownership.<br> The ASF licenses this file =
+to You under the Apache License, Version 2.0<br> (the "License"); you may n=
+ot use this file except in compliance with<br> the License. You may obtain =
+a copy of the License at</p>
+<p><a href=3D"http://www.apache.org/licenses/LICENSE-2.0" class=3D"external=
+-link" rel=3D"nofollow">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software<br> =
+distributed under the License is distributed on an "AS IS" BASIS,<br> WITHO=
+UT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br> See=
+ the License for the specific language governing permissions and<br> limita=
+tions under the License.<br>--&gt;<br><strong>&lt;Server port=3D"8005" shut=
+down=3D"SHUTDOWN"&gt;</strong><br><strong> &lt;Listener className=3D"org.ap=
+ache.catalina.startup.VersionLoggerListener" /&gt;</strong><br> &lt;!-- Sec=
+urity listener. Documentation at /docs/config/listeners.html<br> &lt;Listen=
+er className=3D"org.apache.catalina.security.SecurityListener" /&gt;<br> --=
+&gt;<br> &lt;!--APR library loader. Documentation at /docs/apr.html --&gt;<=
+br> <strong>&lt;Listener className=3D"org.apache.catalina.core.AprLifecycle=
+Listener" SSLEngine=3D"on" /&gt;</strong><br> &lt;!-- Prevent memory leaks =
+due to use of particular java/javax APIs--&gt;<br> <strong>&lt;Listener cla=
+ssName=3D"org.apache.catalina.core.JreMemoryLeakPreventionListener" /&gt;</=
+strong><br><strong> &lt;Listener className=3D"org.apache.catalina.mbeans.Gl=
+obalResourcesLifecycleListener" /&gt;</strong><br><strong> &lt;Listener cla=
+ssName=3D"org.apache.catalina.core.ThreadLocalLeakPreventionListener" /&gt;=
+</strong></p>
+<p>&lt;!-- Global JNDI resources<br> Documentation at /docs/jndi-resources-=
+howto.html<br> --&gt;</p>
+<p>&lt;!-- A "Service" is a collection of one or more "Connectors" that sha=
+re<br> a single "Container" Note: A "Service" is not itself a "Container",<=
+br> so you may not define subcomponents such as "Valves" at this level.<br>=
+ Documentation at /docs/config/service.html<br> --&gt;</p>
+<p><strong>&lt;Service name=3D"Catalina"&gt;</strong></p>
+<p>&lt;!-- Apache Proxy Connector --&gt;<br> <strong>&lt;Connector acceptCo=
+unt=3D"150" connectionTimeout=3D"20000"</strong><br><strong> disableUploadT=
+imeout=3D"true" enableLookups=3D"false"</strong><br><strong> maxHttpHeaderS=
+ize=3D"8192" maxThreads=3D"200"</strong><br><strong> minSpareThreads=3D"25"=
+</strong><br><strong> redirectPort=3D"8443"</strong><br><strong> scheme=3D"=
+https"</strong><br><strong> proxyPort=3D"443"</strong><br><strong> proxyNam=
+e=3D"<a href=3D"http://jira-dts-nft.fm.rbsgrp.net" class=3D"external-link" =
+rel=3D"nofollow">jira-dts-nft.fm.rbsgrp.net</a>"</strong><br><strong> port=
+=3D"8180" protocol=3D"HTTP/1.1"</strong><br><strong> useBodyEncodingForURI=
+=3D"true"</strong><br><strong> /&gt;</strong></p>
+<p>&lt;!-- Standard HTTP Connector --&gt;<br> <strong>&lt;Connector acceptC=
+ount=3D"150" connectionTimeout=3D"20000"</strong><br><strong> disableUpload=
+Timeout=3D"true" enableLookups=3D"false"</strong><br><strong> maxHttpHeader=
+Size=3D"8192" maxThreads=3D"200"</strong><br><strong> minSpareThreads=3D"25=
+" port=3D"8080"</strong><br><strong> protocol=3D"HTTP/1.1" redirectPort=3D"=
+8443" useBodyEncodingForURI=3D"true"/&gt;</strong></p>
+<p><br> &lt;!--<br> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>To run JIRA via HTTPS:</p>
+<p>* Uncomment the Connector below<br> * Execute:<br> %JAVA_HOME%\bin\keyto=
+ol -genkey -alias tomcat -keyalg RSA (Windows)<br> $JAVA_HOME/bin/keytool -=
+genkey -alias tomcat -keyalg RSA (Unix)<br> with a password value of "chang=
+eit" for both the certificate and the keystore itself.<br> * If you are on =
+JDK1.3 or earlier, download and install JSSE 1.0.2 or later, and put the JA=
+R files into<br> "$JAVA_HOME/jre/lib/ext"<br> * Restart and visit <a href=
+=3D"https://localhost:8443/" class=3D"external-link" rel=3D"nofollow">https=
+://localhost:8443/</a></p>
+<p>For more info, see :</p>
+<p><a href=3D"http://confluence.atlassian.com/display/JIRA/Running+JIRA+ove=
+r+SSL+or+HTTPS" class=3D"external-link" rel=3D"nofollow">http://confluence.=
+atlassian.com/display/JIRA/Running+JIRA+over+SSL+or+HTTPS</a></p>
+<p>and</p>
+<p><a href=3D"http://tomcat.apache.org/tomcat-6.0-doc/ssl-howto.html" class=
+=3D"external-link" rel=3D"nofollow">http://tomcat.apache.org/tomcat-6.0-doc=
+/ssl-howto.html</a></p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br> --&gt;<br> &lt;!--<br> &lt;Connector por=
+t=3D"8443" protocol=3D"org.apache.coyote.http11.Http11Protocol"<br> maxHttp=
+HeaderSize=3D"8192" SSLEnabled=3D"true"<br> maxThreads=3D"200" minSpareThre=
+ads=3D"25"<br> enableLookups=3D"false" disableUploadTimeout=3D"true"<br> ac=
+ceptCount=3D"150" scheme=3D"https" secure=3D"true"<br> clientAuth=3D"false"=
+ sslProtocol=3D"TLS" useBodyEncodingForURI=3D"true"/&gt;<br> --&gt;</p>
+<p><br> &lt;!--<br> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>If you have Apache AJP Connector (mod_ajp) as a proxy in front of JIRA y=
+ou should uncomment the following connector configuration line</p>
+<p>See the following for more information :</p>
+<p><a href=3D"http://confluence.atlassian.com/display/JIRA/Configuring+Apac=
+he+Reverse+Proxy+Using+the+AJP+Protocol" class=3D"external-link" rel=3D"nof=
+ollow">http://confluence.atlassian.com/display/JIRA/Configuring+Apache+Reve=
+rse+Proxy+Using+the+AJP+Protocol</a></p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br> --&gt;</p>
+<p>&lt;!--<br> &lt;Connector port=3D"8009" redirectPort=3D"8443" enableLook=
+ups=3D"false" protocol=3D"AJP/1.3" URIEncoding=3D"UTF-8"/&gt;<br> --&gt;</p=
+>
+<p><strong>&lt;Engine name=3D"Catalina" defaultHost=3D"localhost"&gt;</stro=
+ng><br><strong> &lt;Host name=3D"localhost" appBase=3D"webapps" unpackWARs=
+=3D"true" autoDeploy=3D"true"&gt;</strong></p>
+<p><strong>&lt;Context path=3D"/" docBase=3D"${catalina.home}/atlassian-jir=
+a" reloadable=3D"false" useHttpOnly=3D"true"&gt;</strong></p>
+<p><br> &lt;!--<br> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>Note, you no longer configure your database driver or connection paramet=
+ers here.<br> These are configured through the UI during application setup.=
+</p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br> --&gt;</p>
+<p><strong>&lt;Resource name=3D"UserTransaction" auth=3D"Container" type=3D=
+"javax.transaction.UserTransaction"</strong><br><strong> factory=3D"org.obj=
+ectweb.jotm.UserTransactionFactory" jotm.timeout=3D"60"/&gt;</strong><br><s=
+trong> &lt;Manager pathname=3D""/&gt;</strong><br><strong> &lt;/Context&gt;=
+</strong></p>
+<p><strong>&lt;/Host&gt;</strong></p>
+<p>&lt;!--<br> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>Access Logging.</p>
+<p>This should produce access_log.&lt;date&gt; files in the 'logs' director=
+y.</p>
+<p>The output access log lies has the following fields :</p>
+<p>IP Request_Id User Timestamp "HTTP_Method URL Protocol_Version" HTTP_Sta=
+tus_Code ResponseSize_in_Bytes RequestTime_In_Millis Referer User_Agent ASE=
+SSIONID</p>
+<p>eg :</p>
+<p>192.168.3.238 1243466536012x12x1 admin [28/May/2009:09:22:17 +1000] "GET=
+ /jira/secure/admin/jira/IndexProgress.jspa?taskId=3D1 HTTP/1.1" 200 24267 =
+1070 "<a href=3D"http://carltondraught.sydney.atlassian.com:8090/jira/secur=
+e/admin/jira/IndexAdmin.jspa" class=3D"external-link" rel=3D"nofollow">http=
+://carltondraught.sydney.atlassian.com:8090/jira/secure/admin/jira/IndexAdm=
+in.jspa</a>" "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.10) Gecko/=
+2009042523 Ubuntu/9.04 (jaunty) Firefox/3.0.10" "C2C99B632EE0F41E90F8EF7A20=
+1F6A78"</p>
+<p>NOTES:</p>
+<p>The RequestId is a millis_since_epoch plus request number plus number of=
+ concurrent users</p>
+<p>The Request time is in milliseconds</p>
+<p>The ASESSIONID is an hash of the JSESSIONID and hence is safe to publish=
+ within logs. A session cannot be reconstructed from it.</p>
+<p>See <a href=3D"http://tomcat.apache.org/tomcat-6.0-doc/config/valve.html=
+" class=3D"external-link" rel=3D"nofollow">http://tomcat.apache.org/tomcat-=
+6.0-doc/config/valve.html</a> for more information on Tomcat Access Log Val=
+ves</p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>--&gt;<br> <strong>&lt;Valve className=3D"org.apache.catalina.valves.Acc=
+essLogValve" resolveHosts=3D"false"</strong><br><strong> pattern=3D"%a %{<a=
+ href=3D"http://jira.request.id" class=3D"external-link" rel=3D"nofollow">j=
+ira.request.id</a>}r %{jira.request.username}r %t &amp;quot;%m %U%q %H&amp;=
+quot; %s %b %D &amp;quot;%{Referer}i&amp;quot; &amp;quot;%{User-Agent}i&amp=
+;quot; &amp;quot;%{<a href=3D"http://jira.request.assession.id" class=3D"ex=
+ternal-link" rel=3D"nofollow">jira.request.assession.id</a>}r&amp;quot;"/&g=
+t;</strong></p>
+<p><strong>&lt;/Engine&gt;</strong><br><strong> &lt;/Service&gt;</strong><b=
+r><strong>&lt;/Server&gt;</strong></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_9522_486551472.1563774274756--
